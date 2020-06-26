@@ -9,7 +9,6 @@ try:
     remoteServer = raw_input("Enter a remote hostname: ")
     ports = []
     ports = list(map(int,raw_input("Enter the ports to scan: ").strip().split(',')))[:]
-    print ports
     remoteServerIP = socket.gethostbyname(remoteServer)
 except ValueError:
     print "+" * 65
