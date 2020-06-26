@@ -28,7 +28,7 @@ except socket.gaierror:
     print "+" * 65
     sys.exit(1)
 
-if ports[0] == 2:
+if ports[0] == 1:
     print "\nNo input ports given, testing the predefined ports\n"
     ports = [10000,10001,10002]
 t1 = datetime.now()
